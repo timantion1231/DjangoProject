@@ -10,5 +10,7 @@ class Post(models.Model):
     content = models.TextField()
     is_published = models.BooleanField(default= True)
 
+   # class PostStatus
+
     def __str__(self):
         return self.title
