@@ -19,7 +19,7 @@ class BlogDetailView(DeleteView):
 class BlogCreatePost(CreateView):
     model = Post
     template_name = 'blog/post_new.html'
-    fields = ['title', 'content']
+    fields = ['title', 'content', 'self.request']
 
 
 class BlogUpdateView(UpdateView):
